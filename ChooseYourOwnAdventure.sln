@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChooseYourOwnAdventure", "ChooseYourOwnAdventure\ChooseYourOwnAdventure.csproj", "{FEB8A750-C381-4484-9CB6-C86713488949}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEB8A750-C381-4484-9CB6-C86713488949}.Debug|x86.ActiveCfg = Debug|x86
+		{FEB8A750-C381-4484-9CB6-C86713488949}.Debug|x86.Build.0 = Debug|x86
+		{FEB8A750-C381-4484-9CB6-C86713488949}.Release|x86.ActiveCfg = Release|x86
+		{FEB8A750-C381-4484-9CB6-C86713488949}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
