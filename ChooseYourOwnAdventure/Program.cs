@@ -6,7 +6,7 @@ namespace ChooseYourOwnAdventure
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GameHandler game = new GameHandler();
         }
     }
 }
