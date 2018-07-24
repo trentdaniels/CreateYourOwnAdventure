@@ -37,6 +37,7 @@
     <Compile Include="Player.cs" />
     <Compile Include="GameHandler.cs" />
     <Compile Include="Escape.cs" />
+    <Compile Include="UnderWater.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

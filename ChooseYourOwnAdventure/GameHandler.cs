@@ -6,6 +6,7 @@ namespace ChooseYourOwnAdventure
         // Member Variables
         public Player player;
         Escape escapeAdventure;
+        UnderWater underWaterAdventure;
 
         // Constructors
         public GameHandler()
@@ -24,6 +25,9 @@ namespace ChooseYourOwnAdventure
             switch (choice) {
                 case "1":
                     escapeAdventure = new Escape();
+                    break;
+                case "2":
+                    underWaterAdventure = new UnderWater();
                     break;
                 default:
                     Console.WriteLine("Invalid Input. Please try again");
