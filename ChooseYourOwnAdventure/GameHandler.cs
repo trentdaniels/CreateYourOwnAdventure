@@ -8,10 +8,12 @@ namespace ChooseYourOwnAdventure
         Escape escapeAdventure;
         UnderWater underWaterAdventure;
         Flight flightAdventure;
+        Random random;
 
         // Constructors
         public GameHandler()
         {
+            random = new Random();
             player = new Player();
             Choice();
 
@@ -21,7 +23,7 @@ namespace ChooseYourOwnAdventure
         public void Choice () {
             string choice;
 
-            Console.WriteLine("Welcome to the adventure!\nChoose your adventure by typing [1], [2], or [3].");
+            Console.WriteLine("Welcome to the adventure {0}!\nChoose your adventure by typing [1], [2], or [3].", player.name);
             choice = Console.ReadLine();
             switch (choice) {
                 case "1":
@@ -31,11 +33,12 @@ namespace ChooseYourOwnAdventure
                     break;
                 case "2":
                     underWaterAdventure = new UnderWater();
-                    Console.WriteLine(underWaterAdventure.GetUnderWaterAdventure(player.name));
+                    Console.WriteLine(underWaterAdventure.GetUnderWaterAdventure(player.name, random.Next(0, 10)));
+                    Console.ReadLine();
                     break;
                 case "3":
                     flightAdventure = new Flight();
-                    Console.WriteLine(flightAdventure.GetFlightAdventure(player.name));
+                    Console.WriteLine(flightAdventure.GetFlightAdventure(player.name, random.Next(0, 15)));
                     Console.ReadLine();
                     break;
                 default:

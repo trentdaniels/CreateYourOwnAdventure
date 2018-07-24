@@ -3,34 +3,31 @@ namespace ChooseYourOwnAdventure
 {
     public class UnderWater
     {
-        
-
-        Random random;
 
         public UnderWater()
         {
-            
-            random = new Random();
-            Console.WriteLine(GetUnderWaterAdventure());
-            Console.ReadLine();
         }
 
-        public string GetUnderWaterAdventure () {
+        public string GetUnderWaterAdventure (string playerName, double odds)
+        {
             string underWaterOption;
             double chance;
 
-            Console.WriteLine(player.name + " is swimming in the depths of the Bermuda Triangle. What will he do? Press enter" +
+            Console.WriteLine(playerName + " is swimming in the depths of the Bermuda Triangle. What will he do? Press enter" +
                               " to roll the dice and find out your fate");
             Console.ReadLine();
 
-            chance = random.Next(0, 10);
-            if (chance > 7) {
+            chance = odds;
+            if (chance > 7) 
+            {
                 underWaterOption = "You were captured by pirates!!";
             }
-            else if (chance > 4) {
+            else if (chance > 4) 
+            {
                 underWaterOption = "You found the city of Atlantis!";
             }
-            else {
+            else 
+            {
                 underWaterOption = "You found Tupac. Congrats!";
             }
             return underWaterOption;

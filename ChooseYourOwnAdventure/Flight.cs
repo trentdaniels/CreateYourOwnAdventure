@@ -13,7 +13,7 @@ namespace ChooseYourOwnAdventure
 
         }
 
-        public string GetFlightAdventure(string playerName)
+        public string GetFlightAdventure(string playerName, int odds)
         {
             string flightOption;
             double chance;
@@ -22,7 +22,7 @@ namespace ChooseYourOwnAdventure
                               " to roll the dice and find out your fate");
             Console.ReadLine();
 
-            chance = random.Next(0, 15);
+            chance = odds;
             if (chance > 12)
             {
                 flightOption = "The birds pooped in your face. Ew!";
