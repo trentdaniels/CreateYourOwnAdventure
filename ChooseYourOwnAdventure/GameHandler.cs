@@ -7,6 +7,7 @@ namespace ChooseYourOwnAdventure
         public Player player;
         Escape escapeAdventure;
         UnderWater underWaterAdventure;
+        Flight flightAdventure;
 
         // Constructors
         public GameHandler()
@@ -28,6 +29,9 @@ namespace ChooseYourOwnAdventure
                     break;
                 case "2":
                     underWaterAdventure = new UnderWater();
+                    break;
+                case "3":
+                    flightAdventure = new Flight();
                     break;
                 default:
                     Console.WriteLine("Invalid Input. Please try again");

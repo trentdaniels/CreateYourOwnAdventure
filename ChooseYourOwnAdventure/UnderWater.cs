@@ -11,7 +11,8 @@ namespace ChooseYourOwnAdventure
         {
             player = new Player();
             random = new Random();
-            GetUnderWaterAdventure();
+            Console.WriteLine(GetUnderWaterAdventure());
+            Console.ReadLine();
         }
 
         public string GetUnderWaterAdventure () {
