@@ -12,7 +12,7 @@ namespace ChooseYourOwnAdventure
         // Constructors
         public GameHandler()
         {
-            
+            player = new Player();
             Choice();
 
         }
@@ -26,12 +26,17 @@ namespace ChooseYourOwnAdventure
             switch (choice) {
                 case "1":
                     escapeAdventure = new Escape();
+                    Console.WriteLine(escapeAdventure.GetEscapeMethod(player.name));
+                    Console.ReadLine();
                     break;
                 case "2":
                     underWaterAdventure = new UnderWater();
+                    Console.WriteLine(underWaterAdventure.GetUnderWaterAdventure(player.name));
                     break;
                 case "3":
                     flightAdventure = new Flight();
+                    Console.WriteLine(flightAdventure.GetFlightAdventure(player.name));
+                    Console.ReadLine();
                     break;
                 default:
                     Console.WriteLine("Invalid Input. Please try again");
@@ -39,6 +44,7 @@ namespace ChooseYourOwnAdventure
                     break;
 
             }
+            Choice();
         }
     }
 }

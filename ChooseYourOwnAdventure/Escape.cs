@@ -4,23 +4,20 @@ namespace ChooseYourOwnAdventure
     public class Escape
     {
         // Member Variables
-        Player player;
+
 
         // Constructors
         public Escape()
         {
-            player = new Player();
-
-            Console.WriteLine(GetEscapeMethod());
-            Console.ReadLine();
+            
         }
 
         // Methods
-        public string GetEscapeMethod () {
+        public string GetEscapeMethod (string playerName) {
             string escapeHeight;
             string escapeMethod;
 
-            Console.WriteLine(player.name + ", a secret agent from Tokyo, runs into a set a three doors, all at different heights.\n How tall " +
+            Console.WriteLine(playerName + ", a secret agent from Tokyo, runs into a set a three doors, all at different heights.\n How tall " +
                               "are you in inches?");
             escapeHeight = Console.ReadLine();
             if (double.Parse(escapeHeight) > 60) {

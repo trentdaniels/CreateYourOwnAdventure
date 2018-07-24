@@ -3,23 +3,22 @@ namespace ChooseYourOwnAdventure
 {
     public class Flight
     {
-        Player player;
+        
         Random random;
 
         public Flight()
         {
-            player = new Player();
+            
             random = new Random();
-            Console.WriteLine(GetFlightAdventure());
-            Console.ReadLine();
+
         }
 
-        public string GetFlightAdventure()
+        public string GetFlightAdventure(string playerName)
         {
             string flightOption;
             double chance;
 
-            Console.WriteLine(player.name + " is flying into space. What will he do? Press enter" +
+            Console.WriteLine(playerName + " is flying into space. What will he do? Press enter" +
                               " to roll the dice and find out your fate");
             Console.ReadLine();
 

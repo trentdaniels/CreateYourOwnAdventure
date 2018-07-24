@@ -4,12 +4,12 @@ namespace ChooseYourOwnAdventure
     public class UnderWater
     {
         
-        Player player;
+
         Random random;
 
         public UnderWater()
         {
-            player = new Player();
+            
             random = new Random();
             Console.WriteLine(GetUnderWaterAdventure());
             Console.ReadLine();
