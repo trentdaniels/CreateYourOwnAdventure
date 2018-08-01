@@ -44,7 +44,7 @@ namespace ChooseYourOwnAdventure
                 default:
                     Console.WriteLine("Invalid Input. Please try again");
                     Choice();
-                    break;
+                    return;
 
             }
             Choice();
